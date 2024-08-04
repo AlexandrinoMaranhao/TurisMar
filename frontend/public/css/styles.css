@@ -56,6 +56,27 @@ nav a {
 nav a:hover {
     color: gold;
 }
+/*Seção da Barra de Pesquisa*/
+.search-container {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    justify-content: center;
+}
+
+#search-bar {
+    padding: 5px;
+    font-size: 15px;
+    margin: 10px;
+}
+
+#search-button {
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
 /*Seção do Mapa*/
 .map {
     height: 500px;
@@ -114,10 +135,114 @@ footer p {
 }
 
 /* ### */
-/*ESTILOS */
+/*ESTILOS tradicoeseventos.html*/
 /**/
+#events-data{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: justify;
+}
+#events-content{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 2.5;
+    text-align: justify;
+    background-color: antiquewhite;
+    width: 90%;
+    margin-left: 5%;
+    border: 1rem #ddd;
+    border-radius: 8px;
+    text-indent: 5%;
+    padding: 10px;
+}
+/* ### */
+/*ESTILOS motivos.html*/
+/*
+#
+#
+*/
 
+/* Carousel */
+.carousel {
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    overflow: hidden;
+}
 
+.carousel-slide {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.carousel-slide.active {
+    display: block;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.carousel-slide h2 {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 24px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Grid Layout */
+#attractions {
+    background-color: #ffffff; 
+    padding: 40px 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 10px; /* Ajuste de espaçamento entre os itens */
+    max-width: 1200px;
+    margin: 0 auto;
+    background-image: url('../images/site-images//retrotravel.png');
+}
+
+.grid-item {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    color: white;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease; /* Adicionando transição de transformação */
+    cursor: pointer;
+}
+
+.grid-item:hover {
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+}
+
+.grid-item h3 {
+    margin: 0;
+    font-size: 18px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 5px;
+    border-radius: 3px;
+}
 /* Responsividade */
 @media (max-width: 768px) {
     #site-title {

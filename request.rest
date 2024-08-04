@@ -10,7 +10,7 @@ Content-Type: application/json
     "descricao": "Capital do estado e uma das primeiras cidades fundadas no Brasil, é ,em diversos aspectos, o polo central para os visitantes",
     "localizacao": {"latitude": "-2.53073","longitude": "-44.3068"},
     "imagem": "https://www.viagensecaminhos.com/wp-content/uploads/2016/11/vista-aerea-centro-historico-sao-luis.jpg",
-    "slug": "cidade-1"
+    "slug": "sao-luis"
 }
 ###
 
@@ -23,7 +23,7 @@ Content-Type: application/json
     "descricao": "Uma das cidades históricas mais antigas do Maranhão, fundada como Tapuytapera possui ruínas históricas de valor único bem como atrativos naturais",
     "localizacao": {"latitude": "-2.4110","longitude": "-44.4188"},
     "imagem": "https://www.atins.me/wp-content/uploads/2011/09/Alcantara-02_952x476.jpg",
-    "slug": "cidade-3"
+    "slug": "alcantara"
 }
 
 ### GET ALL
@@ -63,7 +63,7 @@ Content-Type: application/json
     "localizacao": {"latitude": "-2.40865","longitude": "-44.41719"},
     "dicas": "Pela localização central é um ótimo local para dar o pontapé inicial no tour por Alcântara e ao mesmo tempo apreciar a história do Marahão, além de ser excelente para fotografias",
     "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRy2tYqjVzTjwY-yexdQ0V_R0tBU9bTDGE73g&s",
-    "destino": "66af159661e877348fde3f7f"
+    "destino": "66af9cff7a3225eb7a6f6a83"
 }
 ###
 POST http://localhost:3000/api/atrativos/
@@ -76,7 +76,7 @@ Content-Type: application/json
     "localizacao": {"latitude": "-2.50536","longitude": "-44.317779"},
     "dicas": "Exposições fotográficas, saraus e outros projetos de conhecimento e entretenimento são constantemente promovidos por lá!",
     "imagem": "https://turismosaoluis.com.br/wp-content/uploads/2023/10/Espigao_220823_BM-46-1024x683.jpg.webp",
-    "destino": "66af132cab302cd41392b13e"
+    "destino": "66af9cfa7a3225eb7a6f6a81"
 }
 ### GET ALL
 GET http://localhost:3000/api/atrativos
