@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TurisMar</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-container">
+        <h1 id="site-title">TURISMAR, SEU GUIA TURISTÍCO INTERATIVO DO MARANHÃO</h1>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Página Inicial</a></li>
+                <li><a href="sobre.html">Sobre o Maranhão</a></li>
+                <li><a href="destinosatracoes.html">Destinos e Atrações</a></li>
+                <li><a href="culinariacultura.html">Culinaria e Cultura</a></li>
+                <li><a href="tradicoeseventos.html">Tradições e Eventos</a></li>
+                <li><a href="motivos.html">Motivos para Visitar</a></li>
+            </ul>
+        </nav>
+        </div>
+        <div class="search-container">
+            <input type="text", id="search-bar" placeholder="Buscar destino...">
+            <button id="search-btn">Buscar</button>
+        </div>
+    </header>   
+    
+    <main id="homepage-content">
+        <section class="carousel">
+            <div class="carousel-slide active" style="background-image: url('images/carousel-images/saoluis1.png');">
+                <h2>São Luís: Patrimônio da Humanidade</h2>
+            </div>
+            <div class="carousel-slide" style="background-image: url('images/carousel-images/lencoismaranhenses.png');">
+                <h2>Barreirinhas: Rota dos Lençóis</h2>
+            </div>
+            <div class="carousel-slide" style="background-image: url('../public/images/carousel-images/saomatias_2.png');">
+                <h2>Alcântara: Patrimônio Histórico</h2>
+            </div>
+            <div class="carousel-slide" style="background-image: url('../public/images/carousel-images/chapmesas_1.png');">
+                <h2>Carolina: Parque Nacional da Chapada das Mesas</h2>
+            </div>
+            <div class="carousel-slide" style="background-image: url('../public/images/carousel-images/deltaparnaiba_2.png');">
+                <h2>Tutoia: Delta do Rio Parnaíba</h2>
+            </div>
+        </section>
+        <section id="attractions">
+            <div class="grid-container">
+                <div class="grid-item" style="background-image: url('images/grid-images/MHAM_interior.png');" onclick="location.href='detalhes.html?destino=sao-luis'">
+                    <h3>Museu Histórico e Artístico do Maranhão (MHAM)</h3>
+                </div>
+                <div class="grid-item" style="background-image: url('images/grid-images/fortesantoantonio_exterior.png');" onclick="location.href='detalhes.html?destino=sao-luis'">
+                    <h3>Forte São Antônio da Barra de São Luís</h3>
+                </div>
+                <div class="grid-item" style="background-image: url('images/grid-images/lencoismaranhense2.jpg');" onclick="location.href='detalhes.html?destino=barreirinhas'">
+                    <h3>Dunas dos Lençóis Maranhenses</h3>
+                </div>
+                <div class="grid-item" style="background-image: url('images/grid-images/capmesas_2.png');" onclick="location.href='detalhes.html?destino=tutoia'">
+                    <h3>Chapada das Mesas</h3>
+                </div>
+                <div class="grid-item" style="background-image: url('images/grid-images/saomatias_1.png');" onclick="location.href='detalhes.html?destino=alcantara'">
+                    <h3>Ruínas da Igreja de São Matias em Alcântara</h3>
+                </div>
+                <div class="grid-item" style="background-image: url('images/grid-images/conventomerces_interior1.png');" onclick="location.href='detalhes.html?destino=convento-das-merces'">
+                    <h3>Convento das Mercês</h3>
+                </div>
+                <div class="grid-item" style="background-image: url('images/grid-images/arthurazevedo_exterior.png');" onclick="location.href='detalhes.html?destino=teatro-arthur-azevedo'">
+                    <h3>Teatro Arthur Azevedo</h3>
+                </div>
+                <div class="grid-item" style="background-image: url('images/grid-images/deltaparnaiba_1.png');" onclick="location.href='detalhes.html?destino=delta-parnaiba'">
+                    <h3>Delta do Rio Parnaíba</h3>
+                </div>
+            </div>
+        <section id="map", class="map"></section>
+    </main>
+
+    <footer>
+        <p>&copy: 2024 - Turismar, Seu Guia Turístico do Maranhão. Todos os direitos reservados</p>
+    </footer>
+    <script src="js/map.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
