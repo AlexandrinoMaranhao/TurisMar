@@ -78,7 +78,7 @@ nav a:hover {
 }
 
 /*Seção do Mapa*/
-.map {
+.map-main {
     height: 500px;
     margin: 15px 0;
     border: 1rem solid #ddd;
@@ -242,6 +242,7 @@ footer p {
     padding: 5px;
     border-radius: 3px;
 }
+
 /* Responsividade */
 @media (max-width: 768px) {
     #site-title {

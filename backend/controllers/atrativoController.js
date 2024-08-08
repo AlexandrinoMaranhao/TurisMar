@@ -26,7 +26,8 @@ const atrativoController = {
                 },
                 dicas: req.body.dicas,
                 imagem: req.body.imagem,
-                destino: req.body.destino
+                destino: req.body.destino,
+                slug: req.body.slug
             });
 
             const novoAtrativo = await atrativo.save();
@@ -95,7 +96,8 @@ const atrativoController = {
                 },
                 dicas: req.body.dicas,
                 imagem: req.body.imagem,
-                destino: req.body.destino
+                destino: req.body.destino,
+                slug: req.body.slug
             });
 
             const atrativoAtualizado =  await Atrativo.findByIdAndUpdate(id, atrativo);

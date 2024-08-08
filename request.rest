@@ -1,13 +1,13 @@
 ### DESTINOS
 ###
 ### CREATE
-### Cidades que faltam: Barreirinhas, Carolina, Tutóia
+### Cidades (Destinos) no banco: São Luís, AlcÂntara, Barreirinhas, Carolina, Tutóia;
 POST http://localhost:3000/api/destinos
 Content-Type: application/json
 
 {
     "nome": "São Luís do Maranhão",
-    "descricao": "Capital do estado e uma das primeiras cidades fundadas no Brasil, é ,em diversos aspectos, o polo central para os visitantes",
+    "descricao": "Capital do estado e uma das primeiras cidades fundadas no Brasil, é ,em diversos aspectos, o polo central para os visitantes que chegam no estado",
     "localizacao": {"latitude": "-2.53073","longitude": "-44.3068"},
     "imagem": "https://www.viagensecaminhos.com/wp-content/uploads/2016/11/vista-aerea-centro-historico-sao-luis.jpg",
     "slug": "sao-luis"
@@ -23,6 +23,40 @@ Content-Type: application/json
     "imagem": "https://www.atins.me/wp-content/uploads/2011/09/Alcantara-02_952x476.jpg",
     "slug": "alcantara"
 }
+###
+POST http://localhost:3000/api/destinos
+Content-Type: application/json
+
+{
+    "nome": "Barreirinhas",
+    "descricao": "Uma das portas de entrada para o Parque Nacional dos Lençóis Maranhenses, tem localização privilegiada para essa área bem como pontos de interesse tal como o Rio Preguiças",
+    "localizacao": {"latitude": "-2.720550","longitude": "-42.837070"},
+    "imagem": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fguia.melhoresdestinos.com.br%2Fbarreirinhas-220-6113-l.html&psig=AOvVaw0PIbhIw89O8p4TkDriqoUF&ust=1723202372734000&source=images&cd=vfe&opi=89978449&ved=0CA8QjRxqFwoTCLi6xM2l5YcDFQAAAAAdAAAAABAT",
+    "slug": "barreirinhas"
+}
+###
+POST http://localhost:3000/api/destinos
+Content-Type: application/json
+
+{
+    "nome": "Carolina",
+    "descricao": "Localizada na região sudoeste do Maranhão, Carolina é uma base para todo visitante que planeja fazer turismo pela Chapada das Mesas e também possui afamadas cachoeiras",
+    "localizacao": {"latitude": "-7.3317","longitude": "-47.4757"},
+    "imagem": "https://www.penaestrada.blog.br/wp-content/uploads/2020/08/chapada-das-mesas-95.jpg",
+    "slug": "carolina"
+}
+###
+POST http://localhost:3000/api/destinos
+Content-Type: application/json
+
+{
+    "nome": "Tutoia",
+    "descricao": "Localizada na parte final do Baixo Parnaíba, Tutóia figura, juntamente com Araioses, como um dos pontos de acesso para a região do Delta do Parnaíba",
+    "localizacao": {"latitude": "-2.7611","longitude": "-42.2785"},
+    "imagem": "https://i.pinimg.com/originals/e7/c4/df/e7c4df1848adc62f4278d76a1349216f.jpg",
+    "slug": "tutoia"
+}
+
 
 ### GET ALL
 GET http://localhost:3000/api/destinos
@@ -48,6 +82,7 @@ Content-Type: application/json
 ### ATRATIVOS 
 ### 
 ### CREATE
+### Atrações criadas no banco: Ruínas da Igreja de São Matias, Forte São Antônio da Barra de São Luís
 ### Atrações que faltam: Teatro Arthur Azevedo, Museu Histórico e Artístico do Maranhão (MHAM), Complexo Cultural da RFFSA - Estação João Pessoa, 
 ### Casa do Maranhão, Catedral Metropolitana de Nossa Senhora da Vitória, Convento das Mercês
 ## Ecoturismo na Chapada das Mesas, Ecoturismo no Delta do Parnaíba
@@ -61,7 +96,8 @@ Content-Type: application/json
     "localizacao": {"latitude": "-2.40865","longitude": "-44.41719"},
     "dicas": "Pela localização central é um ótimo local para dar o pontapé inicial no tour por Alcântara e ao mesmo tempo apreciar a história do Marahão, além de ser excelente para fotografias",
     "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRy2tYqjVzTjwY-yexdQ0V_R0tBU9bTDGE73g&s",
-    "destino": "66af9cff7a3225eb7a6f6a83"
+    "destino": "66af9cff7a3225eb7a6f6a83",
+    "slug": "ruinas-sao-matias"
 }
 ###
 POST http://localhost:3000/api/atrativos/
@@ -74,7 +110,8 @@ Content-Type: application/json
     "localizacao": {"latitude": "-2.50536","longitude": "-44.317779"},
     "dicas": "Exposições fotográficas, saraus e outros projetos de conhecimento e entretenimento são constantemente promovidos por lá!",
     "imagem": "https://turismosaoluis.com.br/wp-content/uploads/2023/10/Espigao_220823_BM-46-1024x683.jpg.webp",
-    "destino": "66af9cfa7a3225eb7a6f6a81"
+    "destino": "66af9cfa7a3225eb7a6f6a81",
+    "slug": "forte-santo-antonio-slz"
 }
 ### GET ALL
 GET http://localhost:3000/api/atrativos

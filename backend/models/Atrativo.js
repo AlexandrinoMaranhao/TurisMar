@@ -10,7 +10,8 @@ const atrativoSchema = new mongoose.Schema({
     },
     dicas: { type: String, required: true },
     imagem: { type: String, required: true },
-    destino: { type: mongoose.SchemaTypes.ObjectId, ref: 'Destino', required: true }
+    destino: { type: mongoose.SchemaTypes.ObjectId, ref: 'Destino', required: true },
+    slug: { type: String, required: true, unique: true }
 }, {versionKey: false});
 
 module.exports = mongoose.model('Atrativo', atrativoSchema);
