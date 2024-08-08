@@ -12,10 +12,10 @@ app.use(cors())
 app.use(express.json())
 app.use(helmet.contentSecurityPolicy({
     directives: {
-      defaultSrc: ["'none'"],
-      imgSrc: ["'self'", "https://turismar-app.onrender.com"],
-      scriptSrc: ["'self'"],
-      styleSrc: ["'self'"],
+      defaultSrc: ["'*'"],
+      imgSrc: ["'*'"],
+      scriptSrc: ["'*'"],
+      styleSrc: ["'*'"],
     }
 }));
 
