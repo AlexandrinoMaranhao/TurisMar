@@ -5,7 +5,7 @@ const mongoose = require("mongoose");
 const atrativoController = {
     save: async (req, res) =>{
         try {
-            const { nome, tipo, sobre, localizacao, dicas, imagem, destino } = req.body;
+            const { nome, tipo, sobre, localizacao, dicas, imagem, destino, slug } = req.body;
             const { latitude, longitude } = localizacao || {};
 
             if (!mongoose.Types.ObjectId.isValid(req.body.destino)) {
