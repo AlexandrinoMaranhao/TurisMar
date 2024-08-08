@@ -13,8 +13,6 @@ Content-Type: application/json
     "slug": "sao-luis"
 }
 ###
-
-###
 POST http://localhost:3000/api/destinos
 Content-Type: application/json
 

@@ -1,9 +1,34 @@
+//Slides
+let currentSlide = 0;
+const slides = document.querySelectorAll('.carousel-slide');
+
+function showSlide(index){
+    slides.forEach((slide, i) => {
+        slide.classList.remove('active');
+        if(i === index){
+            slide.classList.add('active');
+        }
+    });
+}
+
+function nextSlide(){
+    currentSlide = (currentSlide + 1) % slides.length;
+    showSlide(currentSlide);
+}
+
+setInterval(nextSlide, 3000);
+
+document.addEventListener('DOMContentLoaded', () =>{
+    showSlide(currentSlide);
+});
+
 document.addEventListener('DOMContentLoaded', () => {
     showSlide(currentSlide);
     fetchDestinos();
 });
 
 
+// Destinos WIP
 async function fetchDestinos() {
     try {
         const response = await fetch('/api/destinos');
@@ -29,7 +54,7 @@ function displayDestinos(destinos) {
     });
 }
 
-document.getElementById('search-button').addEventListener('click', async () => {
+document.getElementById('search-btn').addEventListener('click', async () => {
     const query = document.getElementById('search-bar').value;
     if (query) {
         try {
