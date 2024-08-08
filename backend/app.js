@@ -21,4 +21,5 @@ app.use("/api", routes);
 app.use(express.static(path.join(__dirname,"../frontend/public")));
 app.listen(PORT, function(){
     console.log("Servidor Online e Rodando");
+    console.log('Static files served from:', path.join(__dirname, "../frontend/public"));
 });
