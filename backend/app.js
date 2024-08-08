@@ -4,20 +4,12 @@ const conn =  require("./db/conn");
 const PORT = 3000;
 const cors =  require("cors");
 const path = require("path");
-const helmet =  require("helmet");
+//const helmet =  require("helmet");
 
 console.log('Current directory:', __dirname); 
 //Iniciando a API
-app.use(cors())
-app.use(express.json())
-app.use(helmet.contentSecurityPolicy({
-    directives: {
-      defaultSrc: ["'*'"],
-      imgSrc: ["'*'"],
-      scriptSrc: ["'*'"],
-      styleSrc: ["'*'"],
-    }
-}));
+app.use(cors());
+app.use(express.json());
 
 //Conectando o DB
 conn();
