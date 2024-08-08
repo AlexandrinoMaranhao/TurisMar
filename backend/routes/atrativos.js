@@ -17,8 +17,7 @@ router
 router
     .route("/atrativos/:id")
     .delete((req, res) => atrativoController.delete(req, res));
-
-
+    
 router
     .route("/atrativos/:id")
     .put((req, res) => atrativoController.update(req, res));
