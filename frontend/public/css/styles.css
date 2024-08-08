@@ -153,6 +153,14 @@ footer p {
     text-indent: 5%;
     padding: 10px;
 }
+
+/* ### */
+/*ESTILOS motivos.html*/
+/*
+#
+#
+*/
+
 /* ### */
 /*ESTILOS motivos.html*/
 /*
@@ -203,7 +211,7 @@ footer p {
 }
 
 /* Grid Layout */
-#attractions {
+#grid-atracoes {
     padding: 40px 0;
 }
 
@@ -227,12 +235,12 @@ footer p {
     flex-direction: column;
     justify-content: flex-end;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-    transition: transform 0.3s ease; /* Adicionando transição de transformação */
+    transition: transform 0.3s ease; 
     cursor: pointer;
 }
 
 .grid-item:hover {
-    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+    transform: scale(1.10); 
 }
 
 .grid-item h3 {
