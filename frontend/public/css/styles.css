@@ -155,11 +155,63 @@ footer p {
 }
 
 /* ### */
-/*ESTILOS motivos.html*/
-/*
-#
-#
-*/
+/*ESTILOS destinosatracoes.html*/
+
+#destinos-info{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 2.5;
+    text-align: justify;
+    background-color: antiquewhite;
+    width: 90%;
+    margin-left: 5%;
+    border: 1rem #ddd;
+    border-radius: 8px;
+    text-indent: 5%;
+    padding: 10px;
+}
+#atrativos-info{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 2.5;
+    text-align: justify;
+    background-color: antiquewhite;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 2.5pc;
+    border: 1rem #ddd;
+    border-radius: 8px;
+    text-indent: 5%;
+    padding: 10px;
+}
+/*#destinos-content{
+    
+}*/
+#lista-destinos{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: x-large;
+    line-height: 2.5;
+    text-align: justify;
+    background-color: antiquewhite;
+    width: 90%;
+    margin-left: 5%;
+    border: 1rem #ddd;
+    border-radius: 8px;
+    text-indent: 5%;
+    padding: 10px;
+}
+#lista-atrativos{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: x-large;
+    line-height: 2.5;
+    text-align: justify;
+    background-color: antiquewhite;
+    width: 90%;
+    margin-left: 5%;
+    border: 1rem #ddd;
+    border-radius: 8px;
+    text-indent: 5%;
+    padding: 10px;
+}
+/**/
 
 /* ### */
 /*ESTILOS motivos.html*/
